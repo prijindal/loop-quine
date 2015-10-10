@@ -5,4 +5,4 @@ python:
 before_install:
     - sudo apt-get install node
 
-script: python quine.py > quine.js && node quine.js > quine2.py && diff -s quine.py quine2.py
+script: python quine.py > quine.js && node quine.js > quine.php && php quine.php > quine2.py && diff -s quine.py quine2.py
