@@ -2,7 +2,7 @@ a = [
 "---- Python Code -----",
 "a = [",
 "]",
-"print(a[5])",
+"print(a[9])",
 "for i in a:",
 "    print(chr(34) + i + chr(34) +',')",
 "for i in range(10, 18):",
