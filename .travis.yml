@@ -3,6 +3,6 @@ python:
   - "2.6"
 
 before_install:
-    - sudo apt-get install node php5 libapache2-mod-php5 php5-cli
+    - apt-get update && apt-get upgrade -y && sudo apt-get install node php5-cli
 
 script: python quine.py > quine.js && node quine.js > quine.php && php quine.php > quine2.py && diff -s quine.py quine2.py
