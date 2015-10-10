@@ -6,8 +6,9 @@ and it actually works
 
 [![Build Status](https://travis-ci.org/prijindal/loop-quine.svg)](https://travis-ci.org/prijindal/loop-quine)
 ```
-python multi.py > multi.js
-node multi.js > out.py
+python quine.py > quine.js
+node quine.js > quine2.py
+diff -s quine.py quine2.py
 ```
 
-out.py and multi.py are freaking same
+quine.py and quine2.py are freaking same
